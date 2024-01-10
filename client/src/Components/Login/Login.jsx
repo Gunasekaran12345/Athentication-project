@@ -18,7 +18,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "https://athentication-server-new.onrender.com/api/auth";
+      const url = "https://athentication-project.onrender.com/api/auth";
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       window.location = "/Home";

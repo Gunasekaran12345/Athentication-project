@@ -18,7 +18,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const url =
-        "https://athentication-server-new.onrender.com/api/users/Register";
+        "https://athentication-project.onrender.com/api/users/Register";
       const { data: res } = await axios.post(url, data);
       navigate("/");
       console.log(res.message);
